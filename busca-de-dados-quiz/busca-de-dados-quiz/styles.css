@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho com linhas e logo, igual ao quiz */
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+header .line {
+    flex: 1;
+    height: 3px;
+    background: #FF7700;
+    border-radius: 2px;
+}
+
+header .logo img {
+    max-height: 70px;
+    display: block;
+}
+
+/* Título */
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title h3 {
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 0.95em;
+}
+
+.title h1 {
+    color: #FF7700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background: #FF7700;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* Card */
+.card {
+    background: #1a1a1a;
+    border: 2px solid #FF7700;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 119, 0, 0.25);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th {
+    background: #FF7700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    padding: 12px 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    color: #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background: #2d2d2d;
+}
+
+td input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid #FF7700;
+    border-radius: 6px;
+    background: #0d0d0d;
+    color: #fff;
+    font-size: 0.95em;
+    font-family: inherit;
+}
+
+td input:focus {
+    outline: none;
+    background: #2d2d2d;
+    box-shadow: 0 0 8px rgba(255, 119, 0, 0.5);
+}
+
+/* Botões */
+.acoes {
+    white-space: nowrap;
+}
+
+.btn-acao {
+    padding: 8px 14px;
+    margin: 2px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-acao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(255, 119, 0, 0.35);
+}
+
+.btn-editar   { background: #FF7700; color: #000; border-color: #FF7700; }
+.btn-deletar  { background: transparent; color: #ff3b3b; border-color: #ff3b3b; }
+.btn-salvar   { background: #1a9c2e; color: #fff; border-color: #1a9c2e; }
+.btn-cancelar { background: transparent; color: #aaa; border-color: #666; }
+
+.btn-deletar:hover { background: #ff3b3b; color: #fff; }
